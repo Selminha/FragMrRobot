@@ -191,12 +191,6 @@ function translateWithDictionary()
 
         // Reforges
         translateSelector("#panelShopActionsMain div.label-material", false);
-		
-		// Main Hand, Off Hand, Head, Neck, Shoulder, ..., Trinket 2
-        translateSelector("#panelShopMats div.slot", false);
-		
-		// Main Hand, Off Hand, Head, Neck, Shoulder, ..., Trinket 2
-        translateSelector("#panelShopMats div.label-material", false);
     }
 	
 	
