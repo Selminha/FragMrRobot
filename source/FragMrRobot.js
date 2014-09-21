@@ -307,10 +307,10 @@ function translateItem(item, itemID)
         translateInto = $(".name", item);
         if(translateInto.length == 0) translateInto = $(".tr-text-qEpic:first-child", item);
         if(translateInto.length == 0) translateInto = $(".tr-text-qRare:first-child", item);
-	if(translateInto.length == 0) translateInto = $(".tr-text-qLegendary:first-child", item);
-	if(translateInto.length == 0) translateInto = $(".tr-text-qUncommon:first-child", item);
-	if(translateInto.length == 0) translateInto = $(".tr-text-qCommon:first-child", item);	
-	
+        if(translateInto.length == 0) translateInto = $(".tr-text-qLegendary:first-child", item);
+        if(translateInto.length == 0) translateInto = $(".tr-text-qUncommon:first-child", item);
+        if(translateInto.length == 0) translateInto = $(".tr-text-qCommon:first-child", item);	
+
         // that's strange, but let's try first link before failing
         if(translateInto.length == 0)
         {
@@ -325,7 +325,7 @@ function translateItem(item, itemID)
             return;
         }
     }
-   
+
     var suffix = "";
     if(translateInto.text().indexOf(' (H)'  ) > 0) suffix = ' (H)';
     if(translateInto.text().indexOf(' (LFR)') > 0) suffix = ' (LFR)';
